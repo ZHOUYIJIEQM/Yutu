@@ -893,9 +893,9 @@
       },
       initListener: function(cxt) {
         var _this = this;
-        // guidecontainer.addEventListener('mousedown', function() {
-        //   audio.play();
-        // })
+        guidecontainer.addEventListener('touchstart', function() {
+          audio.play();
+        })
         //隐藏指示，开始
         guidecontainer.addEventListener(touchStart, function() {
           audio.play();
